@@ -70,7 +70,8 @@ services:
     build: .
     container_name: time2drag_bot
     volumes:
-      - ./bot:/database
+      - ./data/:/app/data/
+      - ./data/migrations/:/app/migrations/
     environment:
       - BOT_TOKEN=тут токен телеграм бота
       - DATABASE_URL=sqlite://database/botdatabase.sqlite3
