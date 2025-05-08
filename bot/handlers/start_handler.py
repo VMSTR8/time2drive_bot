@@ -27,7 +27,7 @@ async def start_router(message: types.Message, state: FSMContext) -> None:
     await state.clear()
     await message.answer(
         text=f'Чат-бот выполняет функцию поиска участников фестиваля '
-             f'по ФИО или по гос. номеру автомобиля.\n'
+             f'по ФИО или по гос. номеру автомобиля.\n\n'
              f'Функция поиска по гос. номеру работает по первым 6-ти '
              f'символам гос. номера.',
         reply_markup=generate_start_keyboard()

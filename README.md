@@ -68,9 +68,9 @@ touch docker-compose.yml
 services:
   bot:
     build: .
-    container_name: telegram_bot
+    container_name: time2drag_bot
     volumes:
-      - ./bot:/app
+      - ./bot:/database
     environment:
       - BOT_TOKEN=тут токен телеграм бота
       - DATABASE_URL=sqlite://database/botdatabase.sqlite3

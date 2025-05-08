@@ -1,3 +1,5 @@
+from asyncio import sleep
+
 from aiogram import types, Router, F
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
@@ -126,6 +128,7 @@ async def process_plate_search(message: types.Message, state: FSMContext) -> Non
 
     for entry in results:
         await message.answer(format_event_entry(entry))
+        await sleep(0.5)
 
 
 @router.message(Search.waiting_for_name)
@@ -163,3 +166,4 @@ async def process_name_search(message: types.Message, state: FSMContext) -> None
 
     for entry in results:
         await message.answer(format_event_entry(entry))
+        await sleep(0.5)
