@@ -25,7 +25,7 @@
 компьютер и создаете файл переменных виртуального окружения .env в папке 
 bot/settings:
 ```
-git clone https://github.com/VMSTR8/time2drive_bot
+git clone https://github.com/VMSTR8/time2drive_bot.git
 cd bot/settings
 touch .env
 ```
