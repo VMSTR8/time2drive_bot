@@ -2,6 +2,14 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 
 def generate_start_keyboard() -> ReplyKeyboardMarkup:
+    """
+    Generates the start keyboard markup with search options.
+
+    Returns:
+        ReplyKeyboardMarkup: A keyboard with two buttons:
+            - Search by Name
+            - Search by Plate Number
+    """
     keyboard = ReplyKeyboardMarkup(
         keyboard=[
             [
