@@ -74,7 +74,7 @@ services:
       - ./data/migrations/:/app/migrations/
     environment:
       - BOT_TOKEN=тут токен телеграм бота
-      - DATABASE_URL=sqlite://database/botdatabase.sqlite3
+      - DATABASE_URL=sqlite://data/botdatabase.sqlite3
       - ADMIN_ID=тут id'шники админа(ов) (Если несколько, то через запятую, например 1234,3210)
     restart: unless-stopped
 ```
