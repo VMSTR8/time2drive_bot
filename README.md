@@ -15,7 +15,7 @@
 ## Стэк
 * [python 3.13](https://www.python.org/)
 * [aiogram 3.20.0.post0](https://docs.aiogram.dev/en/v3.20.0.post0/)
-* [tortoise orm 0.25.0](https://tortoise.github.io/)
+* [tortoise orm 0.22.1](https://tortoise.github.io/)
 
 ## Развертывание и запуск чат-бота
 Большой нагрузки на бота на данном этапе не предвидится, поэтому работает он 
